@@ -1,0 +1,34 @@
+{
+  "name": "csssecret",
+  "version": "1.0.0",
+  "description": "学习css揭秘",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --watch --open",
+    "neal": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NealChristmas/cssSecret.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NealChristmas/cssSecret/issues"
+  },
+  "homepage": "https://github.com/NealChristmas/cssSecret#readme",
+  "devDependencies": {
+    "css-loader": "^3.0.0",
+    "file-loader": "^4.0.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.1.0",
+    "vue-style-loader": "^4.1.2",
+    "webpack": "^4.35.0",
+    "webpack-cli": "^3.3.4",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "dependencies": {
+    "vue": "^2.6.10"
+  }
+}
