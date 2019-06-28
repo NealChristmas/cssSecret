@@ -1,7 +1,7 @@
 const path=require('path');
 const webpack=require('webpack');
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
-
+const development=
 module.exports={
   entry:"./src/index.js",
   output:{
@@ -42,7 +42,8 @@ module.exports={
     contentBase:path.resolve(__dirname),
     port:8090,
     hot:true,
-    inline:true
+    inline:true,
+    historyApiFallback: true
   },
   resolve:{
     alias:{

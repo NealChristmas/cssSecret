@@ -1,14 +1,9 @@
 <template lang="html">
-    <div>neal</div>
+  <div>cssSecret</div>
 </template>
 
 <script>
 export default {
-  data(){
-    return{
-      name:"neal"
-    }
-  }
 }
 </script>
 

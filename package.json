@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --watch --open  NODE_ENV=development",
+    "start": "webpack-dev-server --watch --open ",
     "neal": "webpack",
-    "build":"webpack NODE_ENV=production"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -30,6 +30,7 @@
     "node-sass": "^4.12.0",
     "sass-loader": "^7.1.0",
     "vue-loader": "^15.7.0",
+    "vue-router": "^3.0.6",
     "vue-style-loader": "^4.1.2",
     "vue-template-compiler": "^2.6.10",
     "webpack": "^4.35.0",
