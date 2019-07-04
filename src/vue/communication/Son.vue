@@ -1,19 +1,18 @@
 <template lang="html">
   <div>
-    我是爷爷
-    <Son></Son>
+    我是儿子
+    <GrandSon></GrandSon>
   </div>
 
 </template>
 
 <script>
 import Emitter from "@/vue/utils/emitter.js"
-import Son from "./Son.vue"
-
+import GrandSon from "./GrandSon.vue"
 export default {
-  name:"grandFather",
+  name:"son",
   components:{
-    Son
+    GrandSon
   },
   mixins:[Emitter],
   created(){

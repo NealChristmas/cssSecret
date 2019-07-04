@@ -1,20 +1,14 @@
 <template lang="html">
-  <div>
-    我是爷爷
-    <Son></Son>
+  <div>我是grandSon
+    <button @click="handleClick">触发事件,dispatch</button>
   </div>
-
 </template>
 
 <script>
 import Emitter from "@/vue/utils/emitter.js"
-import Son from "./Son.vue"
 
 export default {
-  name:"grandFather",
-  components:{
-    Son
-  },
+  name:"grandson",
   mixins:[Emitter],
   created(){
     console.log("进来了")
@@ -23,6 +17,9 @@ export default {
   methods:{
     showMessage (text) {
       window.alert(text);
+    },
+    handleClick(){
+      this.dispatch("father","dady","dady收到了吗")
     },
     handleDispatch () {
       this.dispatch();  // ①

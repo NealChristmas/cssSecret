@@ -6,7 +6,9 @@ module.exports={
   entry:"./src/index.js",
   output:{
     path:path.resolve(__dirname,"./dist"),
-    filename:"bundle.js"
+    filename:"bundle.js",
+    // 表示在引入静态资源时，从根路径开始引入
+	  publicPath: '/'
   },
   devtool: '#eval-source-map',
   module:{
@@ -43,7 +45,11 @@ module.exports={
     port:8090,
     hot:true,
     inline:true,
-    historyApiFallback: true
+    // history模式下的url会请求到服务器端，但是服务器端并没有这一个资源文件，就会返回404，所以需要配置这一项
+    historyApiFallback: {
+    	index: '/index.html' //与output的publicPath有关(HTMLplugin生成的html默认为index.html)
+    },
+
   },
   resolve:{
     alias:{

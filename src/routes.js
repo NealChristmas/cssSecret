@@ -7,12 +7,12 @@ import App from "./App.vue"
 Vue.use(VueRouter)
 const router=new VueRouter({
   base:__dirname,
-  mode:"history",
+  // mode:"history",
   routes:[
     { path: '/', component: App},
     { path: '/vue', component: VueCmp,
       children:[
-        {path:"communication",component:CommunicationCmp}
+        {path:"share",component:CommunicationCmp}
       ]
     },
     { path: "/css",component:CssSecretCmp}
